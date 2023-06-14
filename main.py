@@ -1,14 +1,10 @@
 from aiogram import Bot, Dispatcher, types, executor
-from aiogram.dispatcher.filters.state import State, StatesGroup
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher.storage import FSMContext
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from config import token
 import sqlite3, logging
 
 bot = Bot(token)
-storage = MemoryStorage()
-dp = Dispatcher(bot, storage=storage)
+dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
 
 Keyboard_buttons = [
