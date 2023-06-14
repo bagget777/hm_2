@@ -2,3 +2,4 @@ venv
 config
 req.txt
 __pycache__/
+.gitignore
